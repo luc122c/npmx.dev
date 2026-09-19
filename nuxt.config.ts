@@ -126,7 +126,7 @@ export default defineNuxtConfig({
       isr: {
         expiration: 300,
         passQuery: true,
-        allowQuery: ['offset', 'limit'],
+        allowQuery: ['offset', 'limit', 'sort', 'stable-only'],
       },
     },
     '/api/changelog/md/**': {
@@ -235,6 +235,8 @@ export default defineNuxtConfig({
     '/blog/**': { prerender: true },
     '/noodles/**': { prerender: true },
     '/sponsors': { prerender: true },
+    '/tools': { prerender: true },
+    '/tools/deps-stats': { prerender: true },
     // proxy for insights
     '/_v/script.js': {
       proxy: 'https://npmx.dev/_vercel/insights/script.js',

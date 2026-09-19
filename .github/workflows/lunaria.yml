@@ -37,5 +37,4 @@ jobs:
           sfw: true
 
       - name: Generate Lunaria Overview
-        # zizmor: ignore[unpinned-uses]
         uses: lunariajs/action@e5ab09c3c8353fa80786d8c2149873ba3978a3a7 # v0.2.0
